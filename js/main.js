@@ -56,6 +56,10 @@ function generatePassword(lower, number, upper, symbol, length) {
   );
 
   if (typesCount == 0) {
+    alert('You must select atleast 1 checkbox!');
+    return '';
+  } else if (length > 20) {
+    alert('Password length should be less than 20!');
     return '';
   }
 
